@@ -14,11 +14,15 @@
   "license": "MIT",
   "author": "Stephen Johns <steve@stevejay.net> (http://www.perspectivespace.com)",
   "scripts": {
+    "build": "rimraf ./build && copy scss/*.scss build && copy package.json build && copy README.md build && copy LICENSE build",
+    "publish": "npm publish build",
     "example-build": "node ./example/build.js",
     "example-publish": "git subtree push --prefix example origin gh-pages"
   },
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "copy": "^0.3.1",
+    "node-sass": "^4.7.2",
+    "rimraf": "^2.6.2"
   },
   "devEngines": {
     "node": "8.x"

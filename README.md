@@ -5,6 +5,13 @@ Performant CSS+HTML spinners implemented as SCSS mixins. See [here](http://www.p
 All animations are implemented using transform or opacity animations in
 order that the browser need only perform compositing to update the page.
 
+## Motivation 
+
+I wanted a choice of a few spinners to use on websites, spinners that have
+performant animations. I wanted to be able to use the spinners
+with and without a JavaScript front-end framework. As a result, these
+spinners require the HTML markup for them to exist via some other means, rather than this package creating the markup itself.
+
 ## Installation
 
 Yarn:

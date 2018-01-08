@@ -1,0 +1,35 @@
+@mixin segmented-spinner ( $color: white, $diameter: 50px, $segments: 16, $segmentWidth: 4px, $segmentHeight: 12px, $rounded: true, $time: .8s, $animation-name: 'segmented-spinner-animation', $min-opacity: 0.1, $max-opacity: 1) {
+    position: absolute;
+    width: $diameter;
+    height: $diameter;
+    transform: translate(-50%, -50%);
+    & span {
+        position: absolute;
+        background-color: $color;
+        left: ($diameter / 2) - ($segmentWidth / 2);
+        top: 0px;
+        width: $segmentWidth;
+        height: $segmentHeight;
+        @if $rounded==true {
+            border-radius: $segmentWidth / 2;
+        }
+        transform-origin: $segmentWidth / 2 $diameter / 2;
+        animation: $time ease-out infinite #{$animation-name};
+        pointer-events: none;
+        will-change: auto;
+    }
+    @for $i from 1 through $segments - 1 {
+        & span:nth-of-type(#{$i}) {
+            transform: rotate((360deg / $segments) * $i);
+            animation-delay: ($time / $segments) * $i - $time;
+        }
+    }
+    @keyframes #{$animation-name} {
+        0% {
+            opacity: $max-opacity;
+        }
+        100% {
+            opacity: $min-opacity;
+        }
+    }
+}

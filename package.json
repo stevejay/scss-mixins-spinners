@@ -1,0 +1,21 @@
+{
+  "name": "scss-mixins-spinners",
+  "version": "0.1.0",
+  "description": "Performant pure CSS spinners implemented as SCSS mixins",
+  "keywords": [
+    "css",
+    "scss",
+    "spinner"
+  ],
+  "license": "MIT",
+  "author": "Stephen Johns <steve@stevejay.net> (http://www.perspectivespace.com)",
+  "scripts": {
+    "build": "node ./example/build.js"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  },
+  "devEngines": {
+    "node": "8.x"
+  }
+}

@@ -11,7 +11,7 @@ Performant CSS+HTML spinners implemented as SCSS mixins. See [here](http://www.p
 ## Motivation 
 
 I wanted a choice of a few spinners to use on websites, spinners that use
-only transform or opacity animations so the browser need only perform
+only transform and opacity animations so the browser needs to only perform
 compositing to update the page.
 
 I also wanted to be able to use the spinners with and without a JavaScript

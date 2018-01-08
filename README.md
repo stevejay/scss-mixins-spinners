@@ -1,11 +1,9 @@
 # scss-mixins-spinners
 
-Performant pure CSS spinners implemented as SCSS mixins. See [here](http://www.perspectivespace.com/scss-mixins-spinners/) for examples.
+Performant CSS+HTML spinners implemented as SCSS mixins. See [here](http://www.perspectivespace.com/scss-mixins-spinners/) for examples.
 
 All animations are implemented using transform or opacity animations in
-order that the browser need only composite to update the DOM.
-
-The spinners are customizable through mixin parameters.
+order that the browser need only perform compositing to update the page.
 
 ## Installation
 

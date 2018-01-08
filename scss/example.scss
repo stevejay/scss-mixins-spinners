@@ -1,0 +1,9 @@
+@import '../../scss/segmented-spinner.scss';
+@import '../../scss/boxes-spinner.scss';
+#segmented-spinner {
+  @include segmented-spinner($color: green, $segments: 16, $rounded: true);
+}
+
+#boxes-spinner {
+  @include boxes-spinner($color: blue);
+}

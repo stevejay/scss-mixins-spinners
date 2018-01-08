@@ -3,7 +3,7 @@ var fs = require('fs')
 
 sass.render(
   {
-    file: './example/example.scss'
+    file: './example/scss/example.scss'
   },
   function (err, result) {
     if (err) {

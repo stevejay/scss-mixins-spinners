@@ -10,8 +10,8 @@
   "license": "MIT",
   "author": "Stephen Johns <steve@stevejay.net> (http://www.perspectivespace.com)",
   "scripts": {
-    "build": "node ./example/build.js",
-    "publish": "git subtree push --prefix example origin gh-pages"
+    "example-build": "node ./example/build.js",
+    "example-publish": "git subtree push --prefix example origin gh-pages"
   },
   "devDependencies": {
     "node-sass": "^4.7.2"

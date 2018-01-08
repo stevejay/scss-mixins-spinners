@@ -10,8 +10,8 @@ The spinners can all be customized in various ways.
 
 ## Examples
 
-See [here](http://www.perspectivespace.com/scss-mixins-spinners/) for examples
-of the available spinners.
+See [here](http://www.perspectivespace.com/scss-mixins-spinners/) for
+examples of the available spinners.
 
 ## Credits
 

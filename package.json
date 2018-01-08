@@ -1,6 +1,10 @@
 {
   "name": "scss-mixins-spinners",
   "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevejay/scss-mixins-spinners"
+  },
   "description": "Performant pure CSS spinners implemented as SCSS mixins",
   "keywords": [
     "css",

@@ -41,7 +41,10 @@ In your `scss` file, import the mixin file for the spinner you want to
 create an instance of:
 
 ```scss
+// either...
 @import 'scss-mixins-spinners/scss/segmented-spinner.scss';
+// ...or...
+@import '~scss-mixins-spinners/scss/segmented-spinner.scss';
 ```
 
 Now you can make use of the imported mixin to create a spinner

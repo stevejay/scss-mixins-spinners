@@ -41,9 +41,9 @@ In your `scss` file, import the mixin file for the spinner you want to
 create an instance of:
 
 ```scss
-// either...
+// either like this...
 @import 'scss-mixins-spinners/scss/segmented-spinner.scss';
-// ...or...
+// ...or with an initial tilde:
 @import '~scss-mixins-spinners/scss/segmented-spinner.scss';
 ```
 

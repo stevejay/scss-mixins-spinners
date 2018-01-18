@@ -2,8 +2,12 @@
 @import '../../scss/boxes-spinner.scss';
 #segmented-spinner {
   @include segmented-spinner($color: green, $segments: 16, $rounded: true);
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 #boxes-spinner {
   @include boxes-spinner($color: blue);
+  position: absolute;
+  transform: translate(-50%, -50%);
 }

@@ -1,7 +1,9 @@
 #segmented-spinner {
-  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 50px;
   height: 50px;
+  position: absolute;
   transform: translate(-50%, -50%); }
   #segmented-spinner span {
     position: absolute;
@@ -12,7 +14,7 @@
     height: 12px;
     border-radius: 2px;
     transform-origin: 2px 25px;
-    animation: 0.8s ease-out infinite segmented-spinner-animation;
+    animation: 0.8s ease-out infinite "segmented-spinner-animation";
     pointer-events: none;
     will-change: auto; }
   #segmented-spinner span:nth-of-type(1) {
@@ -68,9 +70,11 @@
     opacity: 0.1; } }
 
 #boxes-spinner {
-  position: absolute;
+  left: 50%;
+  top: 50%;
   width: 50px;
   height: 50px;
+  position: absolute;
   transform: translate(-50%, -50%); }
   #boxes-spinner span {
     position: absolute;
@@ -78,7 +82,7 @@
     height: 16.66667px;
     background-color: blue;
     transform-origin: 8.33333px 8.33333px;
-    animation: 1.5s ease-in-out infinite boxes-spinner-animation;
+    animation: 1.5s ease-in-out infinite "boxes-spinner-animation";
     pointer-events: none;
     will-change: auto; }
   #boxes-spinner span:nth-of-type(1) {

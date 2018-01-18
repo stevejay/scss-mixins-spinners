@@ -43,7 +43,7 @@ create an instance of:
 ```scss
 // either like this...
 @import 'scss-mixins-spinners/scss/segmented-spinner.scss';
-// ...or with an initial tilde:
+// ...or you might need to use an initial tilde:
 @import '~scss-mixins-spinners/scss/segmented-spinner.scss';
 ```
 
@@ -62,7 +62,7 @@ should look like the following:
 
 ```html
 <div id='my-spinner'>
-  # 16 span elements in the containing div:
+  <!-- 16 span elements in the containing div: -->
   <span></span>
   <span></span>
   <span></span>

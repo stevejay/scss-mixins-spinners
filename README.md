@@ -101,7 +101,7 @@ Note that the spinners are styled to be centered within the containing element
 .some-spinner {
   @include boxes-spinner(
     $color: red,
-    $width: 50px,
+    $width: 45px,
     $time: 1.5s,
     $animation-name: 'boxes-spinner-animation'
   );
@@ -110,11 +110,16 @@ Note that the spinners are styled to be centered within the containing element
 
 - `$color` Required. The color of the boxes.
 
-- `$width` Optional. The overall width of the spinner in pixels. The same value is used for the height of the spinner. Defaults to `50px`.
+- `$width` Optional. The overall width of the spinner in pixels.
+The same value is used for the height of the spinner. 
+Ideally this value should be a multiple of 3. Defaults to `45px`.
 
-- `$time` Optional. The overall time for a single animation sequence, in seconds or milliseconds. Defaults to `1.5s`.
+- `$time` Optional. The overall time for a single animation sequence, in seconds 
+or milliseconds. Defaults to `1.5s`.
 
-- `$animation-name` Optional. The name of the keyframes animation for this spinner instance. If you create multiple types of spinner, you will need to give them different animation names. Defaults to `'boxes-spinner-animation'`.
+- `$animation-name` Optional. The name of the keyframes animation for this spinner
+instance. If you create multiple types of spinner, you will need to give them
+different animation names. Defaults to `'boxes-spinner-animation'`.
 
 #### Required HTML Markup
 
@@ -163,27 +168,36 @@ Nine span elements contained in a div:
 
 - `$color` Required. The color of the boxes.
 
-- `$diameter` Optional. The overall diameter of the spinner in pixels. Defaults to `50px`.
+- `$diameter` Optional. The overall diameter of the spinner in pixels. Defaults to 
+`50px`.
 
 - `$segments` Optional. The number of segments in the spinner. Defaults to `16`.
 
 - `$segmentWidth` Optional. The width of each segment in pixels. Defaults to `4px`.
 
-- `$segmentHeight` Optional. The height of each segment in pixels. Defaults to `12px`.
+- `$segmentHeight` Optional. The height of each segment in pixels. Defaults to
+`12px`.
 
-- `$rounded` Optional. Whether the segments have rounded corners or not. Defaults to `true`.
+- `$rounded` Optional. Whether the segments have rounded corners or not. Defaults
+to `true`.
 
-- `$time` Optional. The overall time for a single animation sequence, in seconds or milliseconds. Defaults to `.8s`.
+- `$time` Optional. The overall time for a single animation sequence, in seconds
+or milliseconds. Defaults to `.8s`.
 
-- `$animation-name` Optional. The name of the keyframes animation for this spinner instance. If you create multiple types of spinner, you will need to give them different animation names. Defaults to `'segmented-spinner-animation'`.
+- `$animation-name` Optional. The name of the keyframes animation for this spinner 
+instance. If you create multiple types of spinner, you will need to give them 
+different animation names. Defaults to `'segmented-spinner-animation'`.
 
-- `$min-opacity` Optional. The minimum opacity level for each segment during animation. Defaults to `0.1`.
+- `$min-opacity` Optional. The minimum opacity level for each segment during 
+animation. Defaults to `0.1`.
 
-- `$max-opacity` Optional. The maximum opacity level for each segment during animation. Defaults to `1`.
+- `$max-opacity` Optional. The maximum opacity level for each segment during 
+animation. Defaults to `1`.
 
 #### Required HTML Markup
 
-A div containing a span element for each segment. Thus a spinner with 16 segments requires 16 span elements:
+A div containing a span element for each segment. Thus a spinner with 16 segments 
+requires 16 span elements:
 
 ```html
 <div class='some-spinner'>
@@ -210,6 +224,29 @@ A div containing a span element for each segment. Thus a spinner with 16 segment
 
 See [here](http://www.perspectivespace.com/scss-mixins-spinners/) for
 examples of the available spinners.
+
+## Issues
+
+### CSS Modules
+
+If you use these spinners with CSS Modules, you will currently need to
+duplicate the `animation-name` in your SCSS:
+
+```scss
+#my-spinner {
+  @include boxes-spinner(
+    $color: $dark-highlight-color,
+    $animation-name: 'boxes-spinner-animation'
+  );
+
+  & span {
+    animation-name: boxes-spinner-animation;
+  }
+}
+```
+
+This deals with an issue where `local:` gets prefixed to the animation name
+in the mixin functions.
 
 ## Credits
 

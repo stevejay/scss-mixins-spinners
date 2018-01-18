@@ -3,8 +3,8 @@
 ## 2.0.0
 
 - Centered the spinners.
-- Fixed animation name issue when used with CSS Modules.
 - README file fixes.
+- Use separate animation name property to help with CSS Modules animation name issue.
 
 ## 1.0.4
 

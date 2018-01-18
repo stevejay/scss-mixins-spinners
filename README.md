@@ -2,8 +2,7 @@
 
 Performant CSS+HTML spinners implemented as SCSS mixins. See [here](http://www.perspectivespace.com/scss-mixins-spinners/) for examples.
 
-[![npm version](https://badge.fury.io/js/scss-mixins-spinners.svg)](https://badge.fury.io/js/scss-mixins-spinners)
-[![bitHound Dependencies](https://www.bithound.io/github/stevejay/scss-mixins-spinners/badges/dependencies.svg)](https://www.bithound.io/github/stevejay/scss-mixins-spinners/master/dependencies/npm)
+[![npm version](https://badge.fury.io/js/scss-mixins-spinners.svg)](https://badge.fury.io/js/scss-mixins-spinners)(https://www.bithound.io/github/stevejay/scss-mixins-spinners/master/dependencies/npm)
 ![license](https://img.shields.io/npm/l/scss-mixins-spinners.svg)
 
 [![NPM](https://nodei.co/npm/scss-mixins-spinners.png)](https://nodei.co/npm/scss-mixins-spinners/)

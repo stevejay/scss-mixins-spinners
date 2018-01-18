@@ -1,6 +1,7 @@
 @mixin boxes-spinner ($color, $width: 45px, $time: 1.5s, $animation-name: 'boxes-spinner-animation') {
   width: $width;
   height: $width;
+  position: relative;
 
   & span {
     position: absolute;

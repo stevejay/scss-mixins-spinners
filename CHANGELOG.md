@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.0
+
+- Add `position: relative` to the containing div element.
+
 ## 2.0.0
 
 - Centered the spinners.

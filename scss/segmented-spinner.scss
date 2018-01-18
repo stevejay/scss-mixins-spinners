@@ -1,6 +1,7 @@
 @mixin segmented-spinner ( $color: white, $diameter: 50px, $segments: 16, $segmentWidth: 4px, $segmentHeight: 12px, $rounded: true, $time: .8s, $animation-name: 'segmented-spinner-animation', $min-opacity: 0.1, $max-opacity: 1) {
   width: $diameter;
   height: $diameter;
+  position: relative;
 
   & span {
     position: absolute;

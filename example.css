@@ -1,9 +1,9 @@
 #segmented-spinner {
-  left: 50%;
-  top: 50%;
   width: 50px;
   height: 50px;
   position: absolute;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%); }
   #segmented-spinner span {
     position: absolute;
@@ -14,7 +14,8 @@
     height: 12px;
     border-radius: 2px;
     transform-origin: 2px 25px;
-    animation: 0.8s ease-out infinite "segmented-spinner-animation";
+    animation: 0.8s ease-in-out infinite;
+    animation-name: segmented-spinner-animation;
     pointer-events: none;
     will-change: auto; }
   #segmented-spinner span:nth-of-type(1) {
@@ -70,19 +71,20 @@
     opacity: 0.1; } }
 
 #boxes-spinner {
+  width: 45px;
+  height: 45px;
+  position: absolute;
   left: 50%;
   top: 50%;
-  width: 50px;
-  height: 50px;
-  position: absolute;
   transform: translate(-50%, -50%); }
   #boxes-spinner span {
     position: absolute;
-    width: 16.66667px;
-    height: 16.66667px;
+    width: 15px;
+    height: 15px;
     background-color: blue;
-    transform-origin: 8.33333px 8.33333px;
-    animation: 1.5s ease-in-out infinite "boxes-spinner-animation";
+    transform-origin: 7.5px 7.5px;
+    animation: 1.5s ease-in-out infinite;
+    animation-name: boxes-spinner-animation;
     pointer-events: none;
     will-change: auto; }
   #boxes-spinner span:nth-of-type(1) {
@@ -102,7 +104,7 @@
     animation-delay: 0.375s; }
   #boxes-spinner span:nth-of-type(4) {
     left: 0px;
-    top: 16.66667px; }
+    top: 15px; }
   #boxes-spinner span:nth-of-type(4),
   #boxes-spinner span:nth-of-type(8) {
     animation-delay: 0.15s; }
@@ -117,7 +119,7 @@
     animation-delay: 0.375s; }
   #boxes-spinner span:nth-of-type(7) {
     left: 0px;
-    top: 33.33333px; }
+    top: 30px; }
   #boxes-spinner span:nth-of-type(4),
   #boxes-spinner span:nth-of-type(8) {
     animation-delay: 0.15s; }
@@ -131,7 +133,7 @@
   #boxes-spinner span:nth-of-type(3) {
     animation-delay: 0.375s; }
   #boxes-spinner span:nth-of-type(2) {
-    left: 16.66667px;
+    left: 15px;
     top: 0px; }
   #boxes-spinner span:nth-of-type(4),
   #boxes-spinner span:nth-of-type(8) {
@@ -146,8 +148,8 @@
   #boxes-spinner span:nth-of-type(3) {
     animation-delay: 0.375s; }
   #boxes-spinner span:nth-of-type(5) {
-    left: 16.66667px;
-    top: 16.66667px; }
+    left: 15px;
+    top: 15px; }
   #boxes-spinner span:nth-of-type(4),
   #boxes-spinner span:nth-of-type(8) {
     animation-delay: 0.15s; }
@@ -161,8 +163,8 @@
   #boxes-spinner span:nth-of-type(3) {
     animation-delay: 0.375s; }
   #boxes-spinner span:nth-of-type(8) {
-    left: 16.66667px;
-    top: 33.33333px; }
+    left: 15px;
+    top: 30px; }
   #boxes-spinner span:nth-of-type(4),
   #boxes-spinner span:nth-of-type(8) {
     animation-delay: 0.15s; }
@@ -176,7 +178,7 @@
   #boxes-spinner span:nth-of-type(3) {
     animation-delay: 0.375s; }
   #boxes-spinner span:nth-of-type(3) {
-    left: 33.33333px;
+    left: 30px;
     top: 0px; }
   #boxes-spinner span:nth-of-type(4),
   #boxes-spinner span:nth-of-type(8) {
@@ -191,8 +193,8 @@
   #boxes-spinner span:nth-of-type(3) {
     animation-delay: 0.375s; }
   #boxes-spinner span:nth-of-type(6) {
-    left: 33.33333px;
-    top: 16.66667px; }
+    left: 30px;
+    top: 15px; }
   #boxes-spinner span:nth-of-type(4),
   #boxes-spinner span:nth-of-type(8) {
     animation-delay: 0.15s; }
@@ -206,8 +208,8 @@
   #boxes-spinner span:nth-of-type(3) {
     animation-delay: 0.375s; }
   #boxes-spinner span:nth-of-type(9) {
-    left: 33.33333px;
-    top: 33.33333px; }
+    left: 30px;
+    top: 30px; }
   #boxes-spinner span:nth-of-type(4),
   #boxes-spinner span:nth-of-type(8) {
     animation-delay: 0.15s; }

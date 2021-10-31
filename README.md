@@ -221,7 +221,7 @@ requires 16 span elements:
 
 ## Examples
 
-See [here](http://www.perspectivespace.com/scss-mixins-spinners/) for
+See [here](https://stevejay.github.io/scss-mixins-spinners/) for
 examples of the available spinners.
 
 ## Issues

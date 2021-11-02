@@ -1,13 +1,14 @@
 # scss-mixins-spinners
 
-Performant CSS+HTML spinners implemented as SCSS mixins. See [here](http://www.perspectivespace.com/scss-mixins-spinners/) for examples.
+Performant CSS+HTML spinners implemented as SCSS mixins. See [here](https://stevejay.github.io/scss-mixins-spinners/) for examples.
 
-[![npm version](https://badge.fury.io/js/scss-mixins-spinners.svg)](https://badge.fury.io/js/scss-mixins-spinners)(https://www.bithound.io/github/stevejay/scss-mixins-spinners/master/dependencies/npm)
+[![npm version](https://badge.fury.io/js/scss-mixins-spinners.svg)](https://badge.fury.io/js/scss-mixins-spinners)
+
 ![license](https://img.shields.io/npm/l/scss-mixins-spinners.svg)
 
 [![NPM](https://nodei.co/npm/scss-mixins-spinners.png)](https://nodei.co/npm/scss-mixins-spinners/)
 
-## Motivation 
+## Motivation
 
 I wanted a choice of a few spinners to use on websites, spinners that use
 only transform and opacity animations so the browser needs to only perform
@@ -34,16 +35,16 @@ npm install scss-mixins-spinners
 
 ## Usage
 
-The spinner mixins are in individual files in the 
+The spinner mixins are in individual files in the
 `scss-mixins-spinners/scss` directory in this package.
 In your `scss` file, import the mixin file for the spinner you want to
 create an instance of:
 
 ```scss
 // either like this...
-@import 'scss-mixins-spinners/scss/segmented-spinner.scss';
+@import "scss-mixins-spinners/scss/segmented-spinner.scss";
 // ...or you might need to use an initial tilde:
-@import '~scss-mixins-spinners/scss/segmented-spinner.scss';
+@import "~scss-mixins-spinners/scss/segmented-spinner.scss";
 ```
 
 Now you can make use of the imported mixin to create a spinner
@@ -60,7 +61,7 @@ As the above spinner is specified to have 16 segments, the markup
 should look like the following:
 
 ```html
-<div id='my-spinner'>
+<div id="my-spinner">
   <!-- 16 span elements in the containing div: -->
   <span></span>
   <span></span>
@@ -81,7 +82,7 @@ should look like the following:
 </div>
 ```
 
-Note that the spinners are styled to be centered within the containing element
+Note that the spinners are styled to be centred within the containing element
 (`div#my-spinner` in this case).
 
 ## Available Spinners
@@ -91,7 +92,7 @@ Note that the spinners are styled to be centered within the containing element
 #### Import
 
 ```scss
-@import 'scss-mixins-spinners/scss/boxes-spinner.scss';
+@import "scss-mixins-spinners/scss/boxes-spinner.scss";
 ```
 
 #### Parameters
@@ -99,33 +100,27 @@ Note that the spinners are styled to be centered within the containing element
 ```scss
 .some-spinner {
   @include boxes-spinner(
-    $color: red,
-    $width: 45px,
     $time: 1.5s,
-    $animation-name: 'boxes-spinner-animation'
+    $animation-name: "boxes-spinner-animation"
   );
 }
 ```
 
-- `$color` Required. The color of the boxes.
-
-- `$width` Optional. The overall width of the spinner in pixels.
-The same value is used for the height of the spinner. 
-Ideally this value should be a multiple of 3. Defaults to `45px`.
-
-- `$time` Optional. The overall time for a single animation sequence, in seconds 
-or milliseconds. Defaults to `1.5s`.
+- `$time` Optional. The overall time for a single animation sequence, in seconds
+  or milliseconds. Defaults to `1.5s`.
 
 - `$animation-name` Optional. The name of the keyframes animation for this spinner
-instance. If you create multiple types of spinner, you will need to give them
-different animation names. Defaults to `'boxes-spinner-animation'`.
+  instance. If you create multiple types of spinner, you will need to give them
+  different animation names. Defaults to `'boxes-spinner-animation'`.
+
+Control the color and size of the spinner by setting the `color`, `width` and `height` of the containing element.
 
 #### Required HTML Markup
 
 Nine span elements contained in a div:
 
 ```html
-<div class='some-spinner'>
+<div class="some-spinner">
   <span></span>
   <span></span>
   <span></span>
@@ -140,10 +135,10 @@ Nine span elements contained in a div:
 
 ### Segmented Spinner
 
-#### Import 
+#### Import
 
 ```scss
-@import 'scss-mixins-spinners/scss/segmented-spinner.scss';
+@import "scss-mixins-spinners/scss/segmented-spinner.scss";
 ```
 
 #### Parameters
@@ -157,8 +152,8 @@ Nine span elements contained in a div:
     $segmentWidth: 4px,
     $segmentHeight: 12px,
     $rounded: true,
-    $time: .8s,
-    $animation-name: 'segmented-spinner-animation',
+    $time: 0.8s,
+    $animation-name: "segmented-spinner-animation",
     $min-opacity: 0.1,
     $max-opacity: 1
   );
@@ -167,39 +162,39 @@ Nine span elements contained in a div:
 
 - `$color` Required. The color of the boxes.
 
-- `$diameter` Optional. The overall diameter of the spinner in pixels. Defaults to 
-`50px`.
+- `$diameter` Optional. The overall diameter of the spinner in pixels. Defaults to
+  `50px`.
 
 - `$segments` Optional. The number of segments in the spinner. Defaults to `16`.
 
 - `$segmentWidth` Optional. The width of each segment in pixels. Defaults to `4px`.
 
 - `$segmentHeight` Optional. The height of each segment in pixels. Defaults to
-`12px`.
+  `12px`.
 
 - `$rounded` Optional. Whether the segments have rounded corners or not. Defaults
-to `true`.
+  to `true`.
 
 - `$time` Optional. The overall time for a single animation sequence, in seconds
-or milliseconds. Defaults to `.8s`.
+  or milliseconds. Defaults to `.8s`.
 
-- `$animation-name` Optional. The name of the keyframes animation for this spinner 
-instance. If you create multiple types of spinner, you will need to give them 
-different animation names. Defaults to `'segmented-spinner-animation'`.
+- `$animation-name` Optional. The name of the keyframes animation for this spinner
+  instance. If you create multiple types of spinner, you will need to give them
+  different animation names. Defaults to `'segmented-spinner-animation'`.
 
-- `$min-opacity` Optional. The minimum opacity level for each segment during 
-animation. Defaults to `0.1`.
+- `$min-opacity` Optional. The minimum opacity level for each segment during
+  animation. Defaults to `0.1`.
 
-- `$max-opacity` Optional. The maximum opacity level for each segment during 
-animation. Defaults to `1`.
+- `$max-opacity` Optional. The maximum opacity level for each segment during
+  animation. Defaults to `1`.
 
 #### Required HTML Markup
 
-A div containing a span element for each segment. Thus a spinner with 16 segments 
+A div containing a span element for each segment. Thus a spinner with 16 segments
 requires 16 span elements:
 
 ```html
-<div class='some-spinner'>
+<div class="some-spinner">
   <span></span>
   <span></span>
   <span></span>
@@ -235,7 +230,7 @@ duplicate the `animation-name` in your SCSS:
 #my-spinner {
   @include boxes-spinner(
     $color: $dark-highlight-color,
-    $animation-name: 'boxes-spinner-animation'
+    $animation-name: "boxes-spinner-animation"
   );
 
   & span {

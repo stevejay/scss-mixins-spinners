@@ -1,5 +1,5 @@
-@import '../../scss/segmented-spinner.scss';
-@import '../../scss/boxes-spinner.scss';
+@import "../../scss/segmented-spinner.scss";
+@import "../../scss/boxes-spinner.scss";
 
 #segmented-spinner {
   @include segmented-spinner($color: green, $segments: 16, $rounded: true);
@@ -10,9 +10,12 @@
 }
 
 #boxes-spinner {
-  @include boxes-spinner($color: blue);
+  @include boxes-spinner();
+  color: blue;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
 }
